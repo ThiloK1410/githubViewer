@@ -1,10 +1,13 @@
+import "./Header.css";
 
 type HeaderProps = {
-    setUsername: () => void
+    setUsername: (v: string) => void,
 }
 
-function Header(props: HeaderProps) {
-
+export const Header = ({setUsername}: HeaderProps) => {
+    return (
+        <div id="header-div">
+            Test
+        </div>
+    )
 }
-
-export default Header

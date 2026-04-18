@@ -5,21 +5,11 @@
   background-color: #FAAC68;
 }
 
-.header {
-  background-color: #FACE68;
-  height: 5rem;
-  margin: 20px;
-  border: 2px solid black;
-}
-
 .git-body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 40px;
-  margin-top: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 100px;
+  margin: 50px 100px 100px;
   min-height: 0;
 }
 
@@ -58,4 +48,8 @@
 
 .repo-list-item:hover {
   background-color: gray;
+}
+
+#header-div {
+  color: red;
 }
