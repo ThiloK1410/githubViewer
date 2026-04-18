@@ -33,11 +33,11 @@ function RepoViewer({ username }: RepoViewerProps) {
     }, [username])
 
     return (
-        <ul className="repo-list">
+        <div className="repo-list">
             {repos.map((r) => (
               <RepoEntry repoData={r} />
             ))}
-        </ul>
+        </div>
     )
 }
 

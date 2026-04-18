@@ -17,7 +17,6 @@ function App() {
         </div>
         <div className='repo-container content-window'>
           <RepoViewer username={username} />
-          {username}
         </div>
       </div>
     </div>

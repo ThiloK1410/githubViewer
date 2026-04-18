@@ -1,4 +1,7 @@
 import type { GitRepository } from "./RepoViewer"
+import { FiGithub } from "react-icons/fi";
+import { FaCodeFork } from "react-icons/fa6";
+import { MdOutlineStar } from "react-icons/md";
 
 type EntryProps = {
     repoData: GitRepository,
@@ -7,10 +10,19 @@ type EntryProps = {
 export function RepoEntry({ repoData }: EntryProps) {
 
     return (
-        <div>
-            <li className="repo-list-item" key={repoData.name}>
-                    {repoData.name} — ★ {repoData.stargazers_count} / ⑂ {repoData.forks_count}
-            </li>
+        <div className="repo-list-item">
+            <div className="repo-list-item-content">
+                {repoData.name}
+            </div>
+            
+            <div className="repo-list-item-stats">
+                <div>
+                    <FaCodeFork />{repoData.forks_count}
+                </div>
+                <div>
+                    <MdOutlineStar />{repoData.stargazers_count}
+                </div>
+            </div>
         </div>
     )
 }
