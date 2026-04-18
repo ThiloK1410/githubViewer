@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
+import { RepoEntry } from './RepoEntry'
 
-type GitRepository = {
+export type GitRepository = {
     name: string
     forks_count: number
     stargazers_count: number
@@ -34,9 +35,7 @@ function RepoViewer({ username }: RepoViewerProps) {
     return (
         <ul className="repo-list">
             {repos.map((r) => (
-                <li className="repo-list-item" key={r.name}>
-                    {r.name} — ★ {r.stargazers_count} / ⑂ {r.forks_count}
-                </li>
+              <RepoEntry repoData={r} />
             ))}
         </ul>
     )
