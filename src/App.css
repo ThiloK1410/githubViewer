@@ -1,0 +1,61 @@
+.main-body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100svh;
+  background-color: #FAAC68;
+}
+
+.header {
+  background-color: #FACE68;
+  height: 5rem;
+  margin: 20px;
+  border: 2px solid black;
+}
+
+.git-body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  min-height: 0;
+}
+
+.content-window {
+ border: 4px solid gray;
+ border-radius: 10px;
+ min-height: 0;
+ transition: 
+  box-shadow 0.2s ease-out 0s,
+  transform 0.2s ease-in-out 0s;
+ padding: 20px;
+ overflow: auto;
+}
+
+.content-window:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+}
+
+.git-sidebar {
+  background-color: #FA6868;
+}
+
+.repo-container {
+ background-color: aqua;
+ margin-top: 0;
+ background-color: #5A9CB5;
+}
+
+.repo-list {
+ margin-top: 0;
+}
+
+.repo-list-item {
+}
+
+.repo-list-item:hover {
+  background-color: gray;
+}
