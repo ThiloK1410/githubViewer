@@ -1,10 +1,16 @@
 import { useEffect, useState } from "react"
 import { RepoEntry } from './RepoEntry'
+import Tilt from "react-parallax-tilt"
 
 export type GitRepository = {
     name: string
     forks_count: number
     stargazers_count: number
+    description: string
+    url: string
+    language: string
+    default_branch: string
+    updated_at: string
 }
 
 type RepoViewerProps = {
@@ -35,7 +41,10 @@ function RepoViewer({ username }: RepoViewerProps) {
     return (
         <div className="repo-list">
             {repos.map((r) => (
-              <RepoEntry repoData={r} />
+                <Tilt tiltReverse={true} tiltMaxAngleX={10} tiltMaxAngleY={10}
+                        glareEnable={true} glareColor="white" glarePosition="top" glareMaxOpacity={0.3} scale={1.1}>
+                    <RepoEntry repoData={r} />
+                </Tilt>
             ))}
         </div>
     )

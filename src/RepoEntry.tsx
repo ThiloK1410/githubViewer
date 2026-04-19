@@ -17,10 +17,10 @@ export function RepoEntry({ repoData }: EntryProps) {
             
             <div className="repo-list-item-stats">
                 <div>
-                    <FaCodeFork />{repoData.forks_count}
+                    <FaCodeFork /> {repoData.forks_count}
                 </div>
                 <div>
-                    <MdOutlineStar />{repoData.stargazers_count}
+                    <MdOutlineStar /> {repoData.stargazers_count}
                 </div>
             </div>
         </div>
