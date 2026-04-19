@@ -42,7 +42,8 @@ function RepoViewer({ username }: RepoViewerProps) {
         <div className="repo-list">
             {repos.map((r) => (
                 <Tilt tiltReverse={true} tiltMaxAngleX={10} tiltMaxAngleY={10}
-                        glareEnable={true} glareColor="white" glarePosition="top" glareMaxOpacity={0.3} scale={1.1}>
+                        glareEnable={true} glareColor="white" glarePosition="top" 
+                        glareMaxOpacity={0.3} scale={1.1}>
                     <RepoEntry repoData={r} />
                 </Tilt>
             ))}
